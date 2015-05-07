@@ -1,0 +1,30 @@
+product_admin:
+    path:     /
+    defaults: { _controller: "wabelPMBundle:Product:index" }
+
+product_admin_show:
+    path:     /{id}/show
+    defaults: { _controller: "wabelPMBundle:Product:show" }
+
+product_admin_new:
+    path:     /new
+    defaults: { _controller: "wabelPMBundle:Product:new" }
+
+product_admin_create:
+    path:     /create
+    defaults: { _controller: "wabelPMBundle:Product:create" }
+    methods:  POST
+
+product_admin_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "wabelPMBundle:Product:edit" }
+
+product_admin_update:
+    path:     /{id}/update
+    defaults: { _controller: "wabelPMBundle:Product:update" }
+    methods:  [POST, PUT]
+
+product_admin_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "wabelPMBundle:Product:delete" }
+    methods:  [POST, DELETE]

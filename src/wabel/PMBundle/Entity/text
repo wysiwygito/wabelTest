@@ -1,0 +1,17 @@
+ /**
+     * @ORM/PrePersist()
+     */
+    public function increase()
+    {
+        $nblike = $this->getNblike();
+        $this->setNblike($nblike+1);
+    }
+    
+    /**
+     * @ORM/PreRemove()
+     */
+    public function decrease()
+    {
+        $nblike = $this->getNblike();
+        $this->setNblike($nblike-1);
+    }

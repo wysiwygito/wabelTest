@@ -1,0 +1,7 @@
+wabel_pm:
+    resource: "@wabelPMBundle/Resources/config/routing/product.yml"
+    prefix:   /pm
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

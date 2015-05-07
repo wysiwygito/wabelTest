@@ -1,0 +1,3 @@
+wabel_pm_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: wabelPMBundle:Default:index }
